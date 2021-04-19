@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Incrustado </title>
+    <style>
+        span.miclase {
+            color: white;
+            background-color: teal;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .main {
+            background-color: rgb(178, 245, 124);
+        }
+    </style>
+</head>
+
+<body class="main">
+    <main style="width: 50%; margin: 0 auto;">
+
+
+        <h1>Contenido Incrustado etiqueta <i> "img"</i> sirve para agregar una imagen y la propiedad <i> "alt"</i> sirve
+            para
+            establecer una
+            referencia en el caso de que la imagen no haya cargado completamente o la ruta sea erronea</h1>
+        <span class="miclase">OJO: la etiqueta <code> iframe</code> debe ser utilizada para agregar
+            paginas externas o archivos, para
+            archivos de audio o video no es recomendada </span>
+        <h2>Imagen cargada correctamente</h2>
+        <hr style="border: 5px solid white;">
+        <img width="300" src="img/caballos.jpg" alt="Caballos galopando">
+        <h2>Imagen con extension erronea</h2>
+        <hr style="border: 5px solid white;">
+        <img src="img/caballos" alt="Caballos galopando">
+        <h1>Etiqueta "iframe" sirve para agregar un archivo html, o un contenido multimedia pero de manera independiente
+            a
+            la pagina principal por ejemplo</h1>
+        <h2>Como archivo local</h2>
+        <iframe src="otro.html" frameborder="1"></iframe>
+        <h2>Contenido Multimedia</h2>
+        <iframe src="https://www.youtube.com/embed/8eTCqqd4qkw" frameborder="0"></iframe>
+        <h2>Una aplicacion web externa</h2>
+        <iframe width="500" height="500" src="https://modulo-ni.herokuapp.com/" frameborder="0"></iframe>
+        <hr style="border: 5px solid white;">
+        <h1>Etiqueta "embed" sirve para agregar un archivo externo pero interactivo</h1>
+        <h2>Por ejemplo un juego</h2>
+
+        <embed src=" https://media.mariogames.be/mariogames/mariogames-1776/index.html" type="">
+        <hr style="border: 5px solid white;">
+        <h1>Etiqueta "audio" sirve para agregar un archivo de audio dentro de la página con extension <i>ogg</i>
+            <u>mp3</u> <ins>wav</ins>
+        </h1>
+        <h2>Por ejemplo</h2>
+
+        <audio src="/audios/caballos.mp3" controls loop>
+            <source src="/audios/caballos.mp3" type="audio/mpeg">
+            <source src="/audios/caballos.ogg" type="audio/ogg">
+            <source src="/audios/caballos.wav" type="audio/wav">
+            <!--si agregamos este parametro, el "src de la etiqueta "audio" queda anulado"-->
+        </audio>
+        <hr style="border: 5px solid white;">
+        <h1>Etiqueta "video" sirve para agregar un archivo de video dentro de la página y la etiqueta "track" para
+            añadir subtitulos
+        </h1>
+        <h2>Por ejemplo</h2>
+
+        <!--Agregamos parametros en la ruta del segundo donde debe iniciar o finalizar por ejemplo inicia en el segundo 2 y termina en el 5-->
+        <video src="/video/caballos_galopando.mp4#t=2,5" controls loop>
+            <!--track sirve para agregar subtitulos a video o audio-->
+            <track src="subtitulos/sub.vtt" kind="subtitles" label="Español" srclang="es">
+            </track>
+            <source src="/video/caballos_galopando.mp4" type="video/mp4">
+            <source src="/video/caballos_galopando.mp4" type="video/ogg">
+            <!--si agregamos este parametro, el "src de la etiqueta "video" queda anulado"-->
+        </video>
+        <hr style="border: 5px solid white;">
+        <h1>Etiqueta "canvas" sirve para agregar gráficas o incluso imagenes editadas
+        </h1>
+        <h2>Por ejemplo</h2>
+        <canvas id="miTablero" width="600px" height="400px" style="border: 2px solid black;"></canvas>
+        <script>
+            let c = document.getElementById("miTablero");
+            let ct = c.getContext("2d");
+
+            // ct.fillStyle = "rgb(23, 136, 66)";
+            // ct.fillRect(40, 40, 100, 100);
+            // ct.fillStyle = "rgb(23, 66, 136, 0.51)";
+            // ct.fillRect(80, 80, 100, 100);
+
+            // ct.strokeRect(150, 150, 50, 50)
+
+            ct.beginPath();
+            ct.strokeStyle = "rgba(23, 66, 136, 0.51)";
+            ct.arc(75, 75, 50, 0, Math.PI * 2, true);
+            ct.moveTo(110, 75);
+
+            ct.arc(75, 75, 35, 0, Math.PI, false);
+            ct.moveTo(65, 65)
+
+            ct.arc(60, 65, 5, 0, Math.PI * 2, true);
+            ct.moveTo(95, 65);
+
+            ct.arc(90, 65, 5, 0, Math.PI * 2, true);
+            ct.stroke();
+
+        </script>
+        <hr style="border: 5px solid white;">
+        <h1>Etiqueta "canvas" sirve para agregar gráficas vectoriales escalables
+        </h1>
+        <h2>Por ejemplo</h2>
+        <svg width="150" height="100" viewBox="0 0 3 2">
+            <rect width="1" height="2" x="0" fill="#008d46" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#d2232c" />
+        </svg>
+    </main>
+</body>
+
+</html>
