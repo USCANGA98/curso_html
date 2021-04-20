@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    code.miclase {
+        font-size: 20;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        background-color: rgb(107, 177, 107);
+    }
+</style>
+
+<body style="background-color: rgb(87, 255, 255);">
+    <main style="margin: 0 auto; width: 900px;">
+
+
+        <h1>Etiqueta <code class="miclase"> table</code> para hacer tablas de datos con sus respectivas <code
+                class="miclase"> tr</code> que nos sirve para hacer las columnas
+            y
+            <code class="miclase"> td</code> para hacer las filas
+        </h1>
+        <!--Etiqueta table sirve para hacer la tabla y dentro va tr que sirve para hacer la columna y td para hacer las filas-->
+        <table border="1" cellpadding="10" cellspacing="10">
+            <tr>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    Apellido
+                </td>
+                <td>
+                    Edad
+                </td>
+                <td>
+                    Nacimiento
+                </td>
+                <td>
+                    Padre
+                </td>
+                <td>
+                    Madre
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Luis Angel
+                </td>
+                <td>
+                    Uscanga Macario
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    09/22/98
+                </td>
+                <td>
+                    Eleazar martínez cruz
+                </td>
+                <td>
+                    Rosaura Macario Rubio
+                </td>
+            </tr>
+
+        </table>
+        <hr style="border: 10px solid green;">
+        <h1>Tabla con <code class="miclase"> "thead"</code> para establecer una cabecera a la tabla (Nombre, Apellido y
+            Edad) <code class="miclase"> "caption"</code> establece un
+            título a la tabla (Datos de clientes) y <code class="miclase"> "tbody"</code> que es para establecer un
+            cuerpo a la
+            tabla
+        </h1>
+        <table border="2" cellpadding="10" cellspacing="10">
+            <colgroup>
+                <col width="180" style="background-color: blue; ">
+                <col width="180" style="background-color: red;">
+                <col width="180" style="background-color: teal;">
+
+            </colgroup>
+            <caption>Datos de clientes</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Apellido
+                    </th>
+                    <th>
+                        Edad
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Martinez</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Luis Angel</td>
+                    <td>Uscanga</td>
+                    <td rowspan="2">22</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Morales</td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">Tabla de datos estáticos</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr style="border: 10px solid green;">
+    </main>
+</body>
+
+</html>
