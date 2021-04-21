@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-class {
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        code.miclase {
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px;
+            background-color: teal;
+            color: white;
+        }
+
+        .miclase2 {
+            font-size: 25px;
+            display: inline-block;
+            padding: 10px;
+            background-color: rgb(48, 169, 0);
+            color: white;
+        }
+    </style>
+</head>
+<main class="main-class">
+
+
+
+    <body>
+        <h1 class="miclase2">FORMULARIOS</h1>
+        <h2>Input de tipo <code class="miclase"> texto</code></h2>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text">
+                <label for="pass">Contrasena</label>
+                <input name="contraseña" id="pass" type="password">
+                <label for="date">Fecha</label>
+                <input name="fecha" id="date" type="date">
+
+                <input type="submit" value="enviar">
+            </fieldset>
+
+            <h2>Input de tipo <code class="miclase"> radio</code></h2>
+            <fieldset>
+                <legend>
+                    Selecciona algún animal
+                </legend>
+                <label for="">Perro</label>
+                <input name="animal" type="radio" value="perro">
+                <label for="">Gato</label>
+                <input name="animal" type="radio" value="gato">
+                <label for="">Gallina</label>
+                <input name="animal" type="radio" value="gallina">
+                <label for="">Oveja</label>
+                <input name="animal" type="radio" value="oveja">
+            </fieldset>
+            <h2>Input de tipo <code class="miclase"> checkbox </code></h2>
+            <fieldset>
+                <legend>
+                    Selecciona los animales de interes
+                </legend>
+                <label for="">Perro</label>
+                <input name="animal2[]" type="checkbox" value="perro">
+                <label for="">Gato</label>
+                <input name="animal2[]" type="checkbox" value="gato">
+                <label for="">Gallina</label>
+                <input name="animal2[]" type="checkbox" value="gallina">
+                <label for="">Oveja</label>
+                <input name="animal2[]" type="checkbox" value="oveja">
+            </fieldset>
+            <h2>Input de tipo <code class="miclase"> rango</code></h2>
+            <fieldset>
+                <legend>
+                    Selecciona los el rango de interes
+                </legend>
+                <label for="">vol1 en 10</label>
+                <input name="animal2" min="" max="100" type="range" value="10">
+                <label for="">vol2 en 20</label>
+                <input name="animal2" min="" max="100" type="range" value="20">
+                <label for="">vol3 en 30</label>
+                <input name="animal2" min="" max="100" type="range" value="30">
+                <label for="">vol4 en 40</label>
+                <input name="animal2" min="" max="100" type="range" value="40">
+            </fieldset>
+            <h2>Input de tipo <code class="miclase"> buscador</code></h2>
+            <fieldset>
+                <legend>
+                    Buscar algo
+                </legend>
+                <label for="">Buscar</label>
+                <input name="buscar" type="search" placeholder="buscar...">
+
+            </fieldset>
+            <h2>Input de tipo color <code class="miclase"> picker</code></h2>
+            <fieldset>
+                <legend>
+                    selecciona color
+                </legend>
+                <label for="">Color</label>
+                <input name="color" type="color" placeholder="buscar...">
+
+            </fieldset>
+            <h2>Input de tipo <code class="miclase"> archivos</code> para este tipo de archivo es necesario establecer
+                <code class="miclase"> enctype="multipart/form-data"</code>
+                en la etiqueta <code class="miclase"> form</code>
+            </h2>
+            <fieldset>
+                <legend>
+                    Seleccionar archivo
+                </legend>
+                <label for="">Seleccionar un archivo</label>
+                <input name="archivo" type="file" placeholder="file">
+                <legend>Seleccionar archivos</legend>
+                <label for="">Seleccionar muchos archivos</label>
+                <input name="archivos" type="file" multiple placeholder="file">
+
+            </fieldset>
+            <h2>input de tipo <code class="miclase">reset</code> lo que hara es vaciar el contenido de todos los inputs
+            </h2>
+            <fieldset>
+                <legend>
+                    Resetear
+                </legend>
+
+                <input name="reset" value="resetear" type="reset">
+
+            </fieldset>
+        </form>
+    </body>
+</main>
+
+</html>

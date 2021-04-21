@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-class {
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        .miclase {
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px;
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<main class="main-class">
+
+
+
+    <body>
+        <h1 class="miclase">FORMULARIOS 3</h1>
+        <h2>Etiqueta <code class="miclase"> output</code> que a diferencia de <code>input</code> que recibe datos,
+            este devuelve datos en pantalla</h2>
+        <form name="multiplicacion" onsubmit="return false"
+            oninput="resultado.value = parseInt(num1.value)*parseInt(num2.value)">
+            <label for="">Calculadora de multiplicacion</label><br><br>
+            <input id="num1" type="number" step="any">
+            <input id="num2" type="number" step="any"> =
+            <output name="resultado" for="num1 num2">
+
+        </form>
+
+
+        <!--Otra forma de hacer la misma operacion de arriba-->
+        <!-- <form id="formu">
+            <label for="">Calculadora de multiplicacion</label><br><br>
+            <input id="num3" type="number" step="any">
+            <input id="num4" type="number" step="any"> =
+            <output id="resultado2" name="resultado2" for="num3 num4">
+        </form>
+        <script>
+            document.getElementById('formu').addEventListener('input', multiplicar);
+            function multiplicar() {
+
+                let num3 = document.getElementById('num3').value;
+                let num4 = document.getElementById('num4').value;
+                let resultado2 = num3 * num4;
+                document.getElementById('resultado2').value = resultado2;
+            };
+        </script> -->
+        <hr style="border: 13px solid green;">
+    </body>
+</main>
+
+</html>

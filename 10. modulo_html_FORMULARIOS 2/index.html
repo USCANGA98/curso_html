@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-class {
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        .miclase {
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px;
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<main class="main-class">
+
+
+
+    <body>
+        <h1 class="miclase">FORMULARIOS 2</h1>
+        <form>
+            <h2>Etiqueta <code class="miclase"> button</code> a diferencia del input el texto "Enviar" se coloca dentro
+                de las etiquetas "button" y en el input dentro del "value"</h2>
+            <p>button</p>
+            <button class="miclase" type="submit">Enviar</button>
+            <p>input</p>
+            <input type="submit" value="Enviar">
+            <hr style="border: 5px solid teal">
+            <h2>Etiqueta <code class="miclase"> select</code> sirve para seleccionar entre muchas opciones con la
+                etiqueta "option" o un grupo de opciones con la etiqueta "optgroup" y dentro de "optgroup" va la
+                etiqueta "option" a la que le podemos añadir una etiqueta para diferenciar como se puede apreciar debajo
+            </h2>
+            <select name="lenguaje[]" id="" multiple>
+                <option value="">Selecciona un lenguaje</option>
+                <optgroup label="Lenguaje del lado del cliente">
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+                <optgroup label="Lenguaje del lado del servidor">
+                    <option value="Php">Php</option>
+                    <option value="Node">Node</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Firebase">Firebase</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+            </select>
+            <hr style="border: 5px solid teal">
+            <h2>Buscador de ciudades con etiqueta <code> datalist</code> y dentro de code las opciones con la etiqueta
+                <code>option</code> todo dentro de un <code> fieldset</code> y un <code>legend</code>
+            </h2>
+            <fieldset>
+
+                <legend>
+                    Selecciona una opcion
+                </legend>
+                <label for="">Buscar ciudad de México</label>
+                <input name="ciudad" type="search" list="ciudades">
+                <datalist id="ciudades">
+                    <option value="CDMX"></option>
+                    <option value="Veracruz"></option>
+                    <option value="Jalisto"></option>
+                    <option value="Monterrey"></option>
+                    <option value="Guanajuato"></option>
+                    <option value="Nuevo León"></option>
+                </datalist>
+            </fieldset>
+            <hr style="border: 5px solid teal">
+            <h2>Etiqueta <code>progress</code> sirve para visualizar el progreso de la carga de un archivo
+            </h2>
+            <progress value="20" max="100"></progress>
+            <h2></h2>
+            <hr style="border: 5px solid teal">
+            <fieldset>
+                <legend>Contactanos</legend>
+                <h2>Etiqueta <code>textarea</code> sirve para agregar un area de texto multilineas
+                    <input type="text" name="nombre" placeholder="Agrega tu nombre" required>
+                    <input type="text" name="apellido" placeholder="Agrega tu apellido" required>
+                    <input type="text" name="edad" placeholder="Agrega tu edad" required>
+
+
+                    <textarea name="mensaje" cols="50" rows="20" maxlength="100"></textarea cols="50">
+            </fieldset>
+            </h2>
+            
+
+        </form>
+    </body>
+</main>
+
+</html>
